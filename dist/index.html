@@ -13,11 +13,11 @@
     <title>Vuthy Suon | Portfolio</title>
   </head>
   <body>
-    <header class="header bg-light">
+    <header class="header bg-light" id="header">
       <nav class="navbar bg-dark">
         <div class="logo"><a href="#">VS</a></div>
         <ul class="navbar-links">
-          <li class="navbar-link"><a href="#home">Home</a></li>
+          <li class="navbar-link"><a href="#header">Home</a></li>
           <li class="navbar-link"><a href="#about">About</a></li>
           <li class="navbar-link"><a href="#portfolio">Portfolio</a></li>
           <li class="navbar-link"><a href="#contact">Contact</a></li>
@@ -28,7 +28,7 @@
           <span class="header-primary-main">Vuthy Suon</span>
           <span class="header-primary-sub">Front End Engineer</span>
         </h1>
-        <a href="#" class="btn btn-primary btn-see-more" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">See Projects</a>
+        <a href="#portfolio" class="btn btn-primary btn-see-more" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">See Projects</a>
       </div>
     </header>
     <section class="section-about bg-dark" id="about" >
@@ -142,9 +142,13 @@
         <p class="lead text-center">&copy; Vuthy Suon</p>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800
+      });
     </script>
   </body>
 </html>
