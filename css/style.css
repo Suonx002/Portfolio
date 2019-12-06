@@ -73,6 +73,7 @@ ul {
   display: inline-block;
   border-radius: 5rem;
   font-size: 0.8rem;
+  margin: 0 0.3rem;
 }
 
 .btn {
@@ -84,12 +85,20 @@ ul {
   font-size: 1.1rem;
 }
 
+.btn-see-more {
+  color: #fff;
+}
+
 .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn-primary {
@@ -167,6 +176,8 @@ ul {
 }
 
 .header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.9))), url(/img/background.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(/img/background.jpg) no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -316,5 +327,43 @@ ul {
 .section-contact .contact-content .contact-links .contact-link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+  .section-about .about-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .section-about .about-content .about-skills .skill-item {
+    font-size: 1.5rem;
+  }
+  .section-portfolio .portfolio-showcase {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.9))), url(/img/background.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(/img/background.jpg) no-repeat center center/cover;
+    height: 100vh;
+  }
+  .header .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem;
+  }
+  .header .navbar .logo {
+    display: none;
+  }
+  .section-about .about-content {
+    margin: 0 auto;
+  }
+  .section-portfolio .portfolio-showcase {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */
