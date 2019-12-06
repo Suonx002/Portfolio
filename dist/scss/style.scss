@@ -201,6 +201,13 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-bottom: 1px solid $light-color;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 
     .navbar-links {
       display: flex;
