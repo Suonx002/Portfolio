@@ -22,8 +22,26 @@ body {
   text-align: center;
 }
 
+.lead {
+  font-size: 0.9rem;
+}
+
+.small {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.extra-small {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  width: 100%;
+}
+
 a {
-  color: #fff;
+  color: #eee;
   text-decoration: none;
 }
 
@@ -35,6 +53,28 @@ ul {
   list-style: none;
 }
 
+.card {
+  padding: 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-small {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+}
+
 .btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -42,6 +82,14 @@ ul {
   display: inline-block;
   border-radius: 5rem;
   font-size: 1.1rem;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .btn-primary {
@@ -94,17 +142,27 @@ ul {
 .header-secondary {
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   letter-spacing: 2px;
+  margin: 1rem 0;
 }
 
 .header-tertiary {
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+
+.header-quaternary {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  margin: 1rem 0;
   letter-spacing: 1px;
 }
 
@@ -127,10 +185,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
-  background-color: #2980b9;
-  color: #fff;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 .header .navbar .navbar-links {
@@ -161,11 +215,106 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80%;
+  height: 90%;
   text-align: center;
 }
 
 .section-about .about-header {
   margin-bottom: 0.8rem;
+}
+
+.section-about .about-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.section-about .about-content .about-skills .skill-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-about .about-content .about-skills .skill-item {
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+.section-about .about-content .about-skills .skill-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section-about .about-content .about-skills .html {
+  color: #d35400;
+}
+
+.section-about .about-content .about-skills .css {
+  color: #2980b9;
+}
+
+.section-about .about-content .about-skills .js {
+  color: #f1c40f;
+}
+
+.section-about .about-content .about-skills .react {
+  color: #3498db;
+}
+
+.section-portfolio .portfolio-showcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.section-portfolio .portfolio-showcase img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-portfolio .portfolio-showcase img:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.section-contact .contact-content .contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-contact .contact-content .contact-links .contact-link {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+.section-contact .contact-content .contact-links .contact-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
