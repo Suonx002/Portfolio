@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css//style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <script
       src="https://kit.fontawesome.com/4aab0af21c.js"
       crossorigin="anonymous"
@@ -12,32 +13,32 @@
     <title>Vuthy Suon | Portfolio</title>
   </head>
   <body>
-    <header class="header bg-light">
+    <header class="header bg-light" id="header">
       <nav class="navbar bg-dark">
-        <div class="logo"><a href="#">VS</a></div>
+        <div class="logo"><a href="#header">VS</a></div>
         <ul class="navbar-links">
-          <li class="navbar-link"><a href="#home">Home</a></li>
+          <li class="navbar-link"><a href="#header">Home</a></li>
           <li class="navbar-link"><a href="#about">About</a></li>
           <li class="navbar-link"><a href="#portfolio">Portfolio</a></li>
           <li class="navbar-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="header-content" id="home">
-        <h1 class="header-primary">
+        <h1 class="header-primary" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000">
           <span class="header-primary-main">Vuthy Suon</span>
           <span class="header-primary-sub">Front End Engineer</span>
         </h1>
-        <a href="#" class="btn btn-primary btn-see-more">See Projects</a>
+        <a href="#portfolio" class="btn btn-primary btn-see-more" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">See Projects</a>
       </div>
     </header>
     <section class="section-about bg-dark" id="about" >
-      <div class="about-header text-center">
+      <div class="about-header text-center" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000">
         <h2 class="header-secondary ">
           Front end focused
         </h2>
       </div>
       <div class="about-content container" >
-        <div class="about-me card">
+        <div class="about-me card" data-aos="fade-right" data-aos-delay="0" data-aos-duration="1000" data-aos-offset="170">
           <h3 class="header-tertiary ">About Me</h3>
           <p class="lead">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam non
@@ -45,7 +46,7 @@
             repellendus sint voluptas.
           </p>
         </div>
-        <div class="about-skills card">
+        <div class="about-skills card" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="170" disable:mobile>
           <h3 class="header-tertiary ">Technologies</h3>
           <ul class="skill-items">
             <li class="skill-item html"><i class="fab fa-html5"></i></li>
@@ -57,132 +58,95 @@
       </div>
     </section>
     <section class="section-portfolio bg-light" id="portfolio">
-      <div class="portfolio-header text-center">
+      <div class="portfolio-header text-center" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000">
         <h2 class="header-secondary">Portfolio</h2>
       </div>
       <div class="portfolio-showcase container">
-        <div class="card">
-            <a href="#" target="_blank">
+        <div class="card" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000" data-aos-offset="448">
+            <a href="https://suonx002.github.io/adventure-search/" target="_blank">
                 <img
-                  src="https://images.unsplash.com/photo-1575478004684-a9a2a7551251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src="./img/showcase-1.png"
                   alt="image"
                 />
             </a>
-          <h3 class="header-quaternary">Showcase 1</h3>
-          <p class="extra-small">HTML | CSS | React | Redux</p>
+          <h3 class="header-quaternary">Adventure Search</h3>
+          <p class="extra-small">HTML | CSS | Vanilla JavaScript</p>
+          <p class="small">
+            This project allow users to search for artists, concerts, and venues using ticketmaster api.
+          </p>
+          <div class="btn-container">
+            <a href="https://suonx002.github.io/adventure-search/" class="btn-small btn-primary" target="_blank">Live Demo</a>
+            <a href="https://github.com/Suonx002/adventure-search" class="btn-small btn-dark" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="448">
+            <a href="https://slickshop.herokuapp.com/" target="_blank">
+                <img
+                  src="./img/showcase-2.PNG"
+                  alt="image"
+                />
+            </a>
+          <h3 class="header-quaternary">slickShop</h3>
+          <p class="extra-small">React | Semantic UI | Context Api | React Hooks | MongoDB | Mongoose |  Node | Express   </p>
+          <p class="small">
+            Full stack crud clone application inspiration by slickdeals.net. 
+          </p>
+          <div class="btn-container">
+            <a href="https://slickshop.herokuapp.com/" class="btn-small btn-primary" target="_blank">Live Demo</a>
+            <a href="https://github.com/Suonx002/slickShop" class="btn-small btn-dark" target="_blank">Source Code</a>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000" data-aos-offset="448">
+            <a href="https://suonx002.github.io/Weather-Search/" target="_blank">
+                <img
+                  src="./img/showcase-3.PNG"
+                  alt="image"
+                />
+            </a>
+          <h3 class="header-quaternary">Weather Search</h3>
+          <p class="extra-small">HTML | CSS Vanilla Javascript</p>
           <p class="small">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
             magnam.
           </p>
           <div class="btn-container">
-            <a href="#" class="btn-small btn-primary">Live Demo</a>
-            <a href="#" class="btn-small btn-dark">Source Code</a>
+            <a href="https://suonx002.github.io/Weather-Search/" class="btn-small btn-primary" target="_blank">Live Demo</a>
+            <a href="https://github.com/Suonx002/Weather-Search" class="btn-small btn-dark" target="_blank">Source Code</a>
           </div>
         </div>
-        <div class="card">
-            <a href="#" target="_blank">
-                <img
-                  src="https://images.unsplash.com/photo-1575478004684-a9a2a7551251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                  alt="image"
-                />
-            </a>
-          <h3 class="header-quaternary">Showcase 1</h3>
-          <p class="extra-small">HTML | CSS | React | Redux</p>
-          <p class="small">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            magnam.
-          </p>
-          <div class="btn-container">
-            <a href="#" class="btn-small btn-primary">Live Demo</a>
-            <a href="#" class="btn-small btn-dark">Source Code</a>
-          </div>
-        </div>
-        <div class="card">
-            <a href="#" target="_blank">
-                <img
-                  src="https://images.unsplash.com/photo-1575478004684-a9a2a7551251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                  alt="image"
-                />
-            </a>
-          <h3 class="header-quaternary">Showcase 1</h3>
-          <p class="extra-small">HTML | CSS | React | Redux</p>
-          <p class="small">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            magnam.
-          </p>
-          <div class="btn-container">
-            <a href="#" class="btn-small btn-primary">Live Demo</a>
-            <a href="#" class="btn-small btn-dark">Source Code</a>
-          </div>
-        </div>
-        <div class="card">
-            <a href="#" target="_blank">
-                <img
-                  src="https://images.unsplash.com/photo-1575478004684-a9a2a7551251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                  alt="image"
-                />
-            </a>
-          <h3 class="header-quaternary">Showcase 1</h3>
-          <p class="extra-small">HTML | CSS | React | Redux</p>
-          <p class="small">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            magnam.
-          </p>
-          <div class="btn-container">
-            <a href="#" class="btn-small btn-primary">Live Demo</a>
-            <a href="#" class="btn-small btn-dark">Source Code</a>
-          </div>
-        </div>
-        <div class="card">
-            <a href="#" target="_blank">
-                <img
-                  src="https://images.unsplash.com/photo-1575478004684-a9a2a7551251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                  alt="image"
-                />
-            </a>
-          <h3 class="header-quaternary">Showcase 1</h3>
-          <p class="extra-small">HTML | CSS | React | Redux</p>
-          <p class="small">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            magnam.
-          </p>
-          <div class="btn-container">
-            <a href="#" class="btn-small btn-primary">Live Demo</a>
-            <a href="#" class="btn-small btn-dark">Source Code</a>
-          </div>
-        </div>
-        <div class="card">
-            <a href="#" target="_blank">
-                <img
-                  src="https://images.unsplash.com/photo-1575478004684-a9a2a7551251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                  alt="image"
-                />
-            </a>
-          <h3 class="header-quaternary">Showcase 1</h3>
-          <p class="extra-small">HTML | CSS | React | Redux</p>
-          <p class="small">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            magnam.
-          </p>
-          <div class="btn-container">
-            <a href="#" class="btn-small btn-primary">Live Demo</a>
-            <a href="#" class="btn-small btn-dark">Source Code</a>
-          </div>
-        </div>
+       
     </section>
     <section class="section-contact bg-dark">
         <div class="contact-header text-center container" id="contact">
-            <h2 class="header-secondary" >Contact</h2>
+          <div class="grey-card">
+          <h2 class="header-secondary" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="1000"  data-aos-offset="100">Contact</h2>
             <div class="contact-content">
-                <ul class="contact-links">
-                    <li class="contact-link"><a href="#"><i class="fab fa-github"></i></a></li>
-                    <li class="contact-link"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li class="contact-link"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="contact-link"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <div class="contact-info">
+                <div class="phone" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000"  ><i class="fas fa-mobile"></i><span class="phone-span"> 952-686-1657</span></div>
+                <div class="email" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1000"  ><i class="fas fa-envelope"></i><span class="email-span"> suonx002@gmail.com</span></div>
+              </div>
+                <ul class="contact-links card" data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="1000"  data-aos-offset="50">
+                    <li class="contact-link"><a href="https://github.com/Suonx002"><i class="fab fa-github"></i></a></li>
+                    <li class="contact-link"><a href="https://www.linkedin.com/in/suonx002/"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="contact-link"><a href="https://www.facebook.com/hisnowshoes"><i class="fab fa-facebook"></i></a></li>
+                    <li class="contact-link"><a href="https://www.instagram.com/hisnowshoes/"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
+          </div>
         </div>
-
     </section>
+    <div class="section section-footer bg-light">
+      <div class="card">
+        <p class="lead text-center">&copy; Vuthy Suon</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000
+      });
+    </script>
   </body>
 </html>
