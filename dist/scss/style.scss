@@ -73,13 +73,13 @@ ul {
 }
 
 .grey-card {
-  width: 350px;
+  width: 500px;
   margin: 0 auto;
   border: 1px solid $light-color;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -291,10 +291,31 @@ ul {
   //contact section
   &-contact {
     .contact-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .phone,
+        .email {
+          font-size: 1.3rem;
+          padding: 0.3rem;
+        }
+        .phone-span,
+        .email-span {
+          margin-left: 0.5rem;
+        }
+      }
       .contact-links {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-bottom: 1rem;
+
         .contact-link {
           font-size: 1.5rem;
           padding: 1rem;
@@ -334,6 +355,9 @@ ul {
 
 //mobile
 @media screen and (max-width: 600px) {
+  .grey-card {
+    width: 100%;
+  }
   //header
   .header {
     background: linear-gradient(
