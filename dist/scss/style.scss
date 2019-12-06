@@ -342,7 +342,7 @@ ul {
     //about section
     &-about {
       .about-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         .about-skills {
           .skill-item {
             font-size: 1.5rem;
@@ -350,11 +350,10 @@ ul {
         }
       }
     }
-
     //Portfolio section
     &-portfolio {
       .portfolio-showcase {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -427,11 +426,11 @@ ul {
     }
 
     //Portfolio section
-    &-portfolio {
-      .portfolio-showcase {
-        grid-template-columns: 1fr;
-      }
-    }
+    // &-portfolio {
+    //   .portfolio-showcase {
+    //     grid-template-columns: 1fr;
+    //   }
+    // }
   }
 }
 
