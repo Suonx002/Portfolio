@@ -73,7 +73,7 @@ ul {
 }
 
 .grey-card {
-  width: 500px;
+  max-width: $max-width;
   margin: 0 auto;
   border: 1px solid $light-color;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
