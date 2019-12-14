@@ -346,6 +346,13 @@ ul {
           margin: 0.5rem 0;
         }
 
+        .resume-link {
+          :hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+          }
+        }
+
         .resume-img {
           width: 75px;
           height: 75px;
