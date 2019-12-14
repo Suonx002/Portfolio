@@ -32,13 +32,13 @@ body {
 }
 
 .lead {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .small {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  height: 119px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -259,8 +259,8 @@ ul {
 
       .about-skills {
         .skill-items {
-          display: flex;
-          flex-direction: row;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
           justify-content: center;
           align-items: center;
         }
@@ -285,6 +285,22 @@ ul {
         }
         .react {
           color: $secondary-color;
+        }
+
+        .sass {
+          color: #bf4080;
+        }
+
+        .node {
+          color: #43853d;
+        }
+
+        .git {
+          color: #f06e1a;
+        }
+
+        .npm {
+          color: #ca3838;
         }
       }
     }
@@ -323,6 +339,19 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .resume-link,
+        .phone,
+        .email {
+          margin: 0.5rem 0;
+        }
+
+        .resume-img {
+          width: 75px;
+          height: 75px;
+          object-fit: contain;
+        }
+
         .phone,
         .email {
           font-size: 1.3rem;
@@ -377,11 +406,6 @@ ul {
       .about-content {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        .about-skills {
-          .skill-item {
-            font-size: 1.5rem;
-          }
-        }
       }
     }
     //Portfolio section
@@ -399,14 +423,6 @@ ul {
   .grey-card {
     width: 100%;
   }
-
-  // .btn-small {
-  //   font-size: 0.6rem;
-  // }
-
-  // .btn {
-  //   font-size: 0.8rem;
-  // }
 
   .header-primary-main {
     font-size: 3rem;
@@ -459,48 +475,5 @@ ul {
         margin: 0 auto;
       }
     }
-
-    //Portfolio section
-    // &-portfolio {
-    //   .portfolio-showcase {
-    //     grid-template-columns: 1fr;
-    //   }
-    // }
   }
 }
-
-// //mobile
-// @media screen and (max-width: 400px) {
-//   .btn-small {
-//     font-size: 0.4rem;
-//   }
-
-//   .btn {
-//     font-size: 0.7rem;
-//   }
-
-//   .header-primary-main {
-//     font-size: 2rem;
-//     letter-spacing: 0.4rem;
-//   }
-
-//   .header-primary-sub {
-//     font-size: 1rem;
-//     letter-spacing: 0.2rem;
-//   }
-
-//   .header-secondary {
-//     font-size: 0.9rem;
-//     letter-spacing: 2px;
-//   }
-
-//   .header-tertiary {
-//     font-size: 0.8rem;
-//     letter-spacing: 1px;
-//   }
-
-//   .header-quaternary {
-//     font-size: 0.7rem;
-//     letter-spacing: 1px;
-//   }
-// }
